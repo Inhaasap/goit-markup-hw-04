@@ -165,11 +165,12 @@ body {
 
 .header-icon {
   margin-right: 10px;
-}
-
-.header-icon:hover {
   fill: currentColor;
 }
+
+/* .header-icon:hover {
+  fill: currentColor;
+} */
 
 /* -------- HERO --------- */
 .overlay {
@@ -384,7 +385,7 @@ body {
   color: var(--color-text-secondary);
   font-size: 16px;
   line-height: 1.19;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .team-soc-list {
@@ -422,7 +423,7 @@ body {
 
 
 .section-clients {
-  padding: 94px;
+  padding: 94px 0;
 
 }
 
@@ -448,19 +449,20 @@ body {
 .clients-link {
   width: 100%;
   height: 100%;
-  border: 1px solid #AFB1B8;
+  border: 1px solid currentColor;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #AFB1B8;
 }
 
-.clients-link:hover {
-  border-color: var(--accent-color);
-}
+.clients-link:hover { 
+  color: var(--accent-color);
+} 
 
 .client-icon {
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
 .client-icon:hover {
@@ -522,13 +524,16 @@ body {
 .footer-wrap {
   display: flex;
   align-items: baseline;
-  gap: 70px;
   }
+
+.left-col {
+  margin-right: 70px;
+}
 
 .footer-title {
   color: var(--primary-bg-color);
   font-weight: 700;
-  font-size: 14px;
+  /* font-size: 14px; */
   line-height: calc(16/14);
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -591,6 +596,16 @@ body {
 
 .card-item:nth-last-child(-n + 3) {
   margin: 0;
+}
+
+.card-link {
+  display: block;
+}
+
+.card-link:hover,
+.card-link:focus {
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
 }
 
 .bottom-card {
