@@ -156,6 +156,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
 }
 
 .contact-link:hover,
@@ -290,7 +292,6 @@ body {
   background-size: 70px;
 }
 
-
 .features-title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -417,14 +418,11 @@ body {
 .team-soc-link:hover {
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
-  
 }
-      /* --------section clients ----------- */
-
+/* --------section clients ----------- */
 
 .section-clients {
   padding: 94px 0;
-
 }
 
 .section-clients-title {
@@ -452,14 +450,16 @@ body {
   border: 1px solid currentColor;
   border-radius: 4px;
   display: flex;
+  outline: transparent;
   align-items: center;
   justify-content: center;
-  color: #AFB1B8;
+  color: #afb1b8;
 }
 
-.clients-link:hover { 
+.clients-link:hover,
+.clients-link:focus {
   color: var(--accent-color);
-} 
+}
 
 .client-icon {
   fill: currentColor;
@@ -524,7 +524,7 @@ body {
 .footer-wrap {
   display: flex;
   align-items: baseline;
-  }
+}
 
 .left-col {
   margin-right: 70px;
@@ -533,18 +533,20 @@ body {
 .footer-title {
   color: var(--primary-bg-color);
   font-weight: 700;
-  /* font-size: 14px; */
-  line-height: calc(16/14);
+  line-height: calc(16 / 14);
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: var(--accent-active-color);
 }
 
 .foot {
   color: var(--primary-bg-color);
   background: rgba(255, 255, 255, 0.1);
 }
-
-
 
 /* ------ styles for portfolio -------- */
 
@@ -577,6 +579,8 @@ body {
 .filter-list .secondary-button:focus {
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  
 }
 
 .filter-list .secondary-button.current {
@@ -604,8 +608,7 @@ body {
 
 .card-link:hover,
 .card-link:focus {
-  background: #FFFFFF;
-  border: 1px solid #EEEEEE;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .bottom-card {
